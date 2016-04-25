@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/fonts.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/widgetStatistics.css">
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/animate/animate.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+</head>
+<body>
+<div class="container font__open-sans_regular">
+    <div class="widgetStatistics">
+        <div class="widgetStatistics-tabs">
+            <div class="widgetStatistics-tabs-item">
+                Diagram stats
+            </div>
+            <div class="widgetStatistics-tabs-item">
+                Month report
+            </div>
+        </div>
+        <div class="widgetStatistics-chart">
+            <div class="widgetStatistics-chart-caption">Data transfer</div>
+            <div id="chartdiv"></div>
+        </div>
+        <div class="widgetStatistics-largestSize">
+            <div class="widgetStatistics-largestSize-item">
+                <div class="widgetStatistics-largestSize-item-led"></div>
+                audio 55%
+            </div>
+            <div class="widgetStatistics-largestSize-item">
+                <div class="widgetStatistics-largestSize-item-led"></div>
+                video 23%
+            </div>
+            <div class="widgetStatistics-largestSize-item">
+                <div class="widgetStatistics-largestSize-item-led"></div>
+                photo 17%
+            </div>
+        </div>
+        <div class="widgetStatistics-actions">
+            <div class="widgetStatistics-actions-item">Upload files</div>
+            <div class="widgetStatistics-actions-item">Share link</div>
+            <div class="widgetStatistics-actions-item">Back up</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var chartData = {
+        "2014": [
+            {"sector": "Audio", "size": 55},
+            {"sector": "Video", "size": 23},
+            {"sector": "Photo", "size": 17},
+            {"sector": "Other", "size": 5}]
+    };
+
+    var chart = AmCharts.makeChart("chartdiv", {
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[percents]]%</b></span>",
+                "innerRadius": 62,
+                "pullOutRadius": 3,
+                "startRadius": "200%",
+                "colors": [
+                    "#4cae7a",
+                    "#e35d3a",
+                    "#e9c65d",
+                    "#f2ebe5"
+                ],
+                "labelsEnabled": false,
+                "marginBottom": 32,
+                "pullOutDuration": 0.3,
+                "pullOutEffect": "elastic",
+                "pullOutOnlyOne": true,
+                "sequencedAnimation": false,
+                "titleField": "category",
+                "valueField": "column-1",
+                "accessible": false,
+                "titles": [],
+                "allLabels": [
+                    {
+                        "align": "center",
+                        "bold": true,
+                        "color": "#8d7e70",
+                        "id": "Label-1",
+                        "size": 25,
+                        "text": "47Gb",
+                        "y": "43%"
+                    },
+                    {
+                        "align": "center",
+                        "bold": true,
+                        "color": "#e35d3a",
+                        "id": "Label-2",
+                        "size": 15,
+                        "text": "2, 435 files",
+                        "y": "36%"
+                    }
+                ],
+                "balloon": {},
+                "legend": {
+                    "enabled": false,
+                    "align": "center",
+                    "markerType": "circle",
+                    "valueWidth": 49
+                },
+                "dataProvider": [
+                    {
+                        "category": "Audio",
+                        "column-1": "55"
+                    },
+                    {
+                        "category": "Video",
+                        "column-1": "23"
+                    },
+                    {
+                        "category": "Photo",
+                        "column-1": "17"
+                    },
+                    {
+                        "category": "Other",
+                        "column-1": "5"
+                    }
+                ]
+            }
+    );
+</script>
+</body>
+</html>
