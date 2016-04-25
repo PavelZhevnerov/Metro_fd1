@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/fonts.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/widgetContactForm.css">
+</head>
+<body>
+<div class="container font__open-sans_regular">
+    <div class="contactForm">
+        <div class="contactForm-body">
+            <div class="label-wrapper">
+                <label>Contacts</label>
+            </div>
+            <div>
+                <div class="contactsInput cf">
+                    <div class="contact"><div class="contact-content">Hell@me.com</div></div>
+                    <div class="contact"><div class="contact-content">Andy@me.com</div></div>
+                    <div class="floatRight">
+                        <button class="addContact"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="label-wrapper">
+                <label for="subject">Subject</label>
+            </div>
+            <div>
+                <input type="text" name="subject" id="subject" placeholder="You can add a subject">
+            </div>
+            <div class="label-wrapper">
+                <label for="message">Message</label>
+            </div>
+            <div>
+                <textarea name="message" id="message" placeholder="Leave your message here" rows="4"></textarea>
+            </div>
+        </div>
+        <div class="contactForm-footer cf">
+            <div class="label-wrapper">
+                <label for="saveCopy">
+                    <input type="checkbox" name="saveCopy" id="saveCopy">Save a copy
+                </label>
+            </div>
+            <div class="floatRight">
+                <button class="sendMail web20">Send mail</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

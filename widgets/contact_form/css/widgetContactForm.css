@@ -1,0 +1,158 @@
+button,
+input,
+textarea {
+    outline: none
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+}
+
+input[type="text"],
+textarea {
+    padding: 14px 14px 15px;
+    width: calc(100% - 14px * 2 - 1px * 2);
+    border: 1px solid #e5d4c2;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+}
+
+.contactForm {
+}
+
+.contactsInput {
+    padding: 3px 4px 5px;
+    width: calc(100% - 4px * 2 - 1px * 2);
+    border: 1px solid #e5d4c2;
+    border-radius: 4px;
+}
+
+.contactsInput .contact {
+    display: table;
+    float: left;
+    height: 36px;
+    border-radius: 3px;
+    color: #f0f6f1;
+    background-color: #5d8fae;
+    margin-right: 5px;
+}
+
+.contactsInput .contact + .contact {
+    background-color: #4cae7a;
+}
+
+.contactsInput .contact .contact-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 6px 0 10px;
+}
+
+.contactForm label {
+    color: #96887a;
+}
+
+.contactForm button {
+    text-transform: capitalize;
+    padding: 12px 39px 13px 38px;
+    border: 1px solid;
+    border-radius: 3px;
+    position: relative;
+}
+
+.contactForm button.web20 {
+    box-shadow: 0 1px 1px #aaaaaa;
+}
+
+
+.contactForm button.web20:after {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, .4);
+}
+
+.contactForm-body .label-wrapper {
+    margin: 18px 0 10px 1px;
+}
+
+.contactForm-footer .label-wrapper {
+    display: inline-block;
+    margin: 12px 0 10px 0;
+}
+
+.contactForm .contactForm-body {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.contactForm .contactForm-footer {
+    padding-top: 22px;
+    padding-bottom: 21px;
+}
+
+.contactForm .contactForm-body {
+    padding-left: 32px;
+    padding-right: 30px;
+}
+
+.contactForm .contactForm-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.contactForm .contactForm-footer {
+    background-color: #f6f1ee;
+}
+
+.contactForm button.sendMail {
+    color: #fcf6f4;
+    background-color: #e35f3b;
+    border-color: #c65739;
+}
+
+.contactForm button.addContact {
+    background-color: #ebe1db;
+    border: none;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+}
+
+.contactForm button.addContact:before,
+.contactForm button.addContact:after {
+    content: '';
+    background-color: #ebe1db;
+    border: 2px solid #fdfdfd;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.contactForm button.addContact:before {
+    width: 16px;
+    top: 16px;
+}
+
+.contactForm button.addContact:after {
+    width: 0;
+    height: 16px;
+    left: 16px;
+    top: 8px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
