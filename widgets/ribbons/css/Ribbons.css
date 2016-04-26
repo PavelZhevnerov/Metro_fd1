@@ -1,0 +1,43 @@
+@import url(../../../common/css/fonts.css);
+#Ribbons_wrapper{
+	width: 67px;
+	height: 74px;
+	background-color: white;
+	border-radius: 6px;
+}
+.Ribbons_Flag {
+	width: 45px;
+	height: 41px;
+	position: relative;
+	background: #4daf7c;
+	color: white;
+	font-size: 18.15px;
+	padding-left: 15px;
+	padding-top: 9px;
+	text-transform: uppercase;
+	top: 13px;
+	right: -5px;
+	border-right: 5px solid #66ba8f;
+	font-family: 'Open Sans Bold', sans-serif;
+  
+}
+.Ribbons_Flag:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 25px solid transparent;
+	border-left: 10px solid white;
+	border-top: 25px solid transparent;
+}
+
+.Ribbons_Flag_Content{
+	width: 50px;
+	height: 30px;
+}
+
+.Ribbons_Flag_text{
+	font-size: 12px;
+}
