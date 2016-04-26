@@ -1,0 +1,84 @@
+@import url("../../../common/css/reset.css");
+@import url("../../../common/css/common.css");
+@import url("../../../common/css/fonts.css");
+
+body{
+	background-color:#333;
+}
+
+.menu_nav{
+  	height: 65px;
+  	width: 631px;
+  	background-color: #f6f0ec;
+ 	border-radius:4px;
+ 	overflow:hidden;
+}
+
+.footer_nav__link{
+	display:block;
+  	width:157px;
+  	height:65px;
+  	background-color: #fff;
+  	float:left;
+  	margin-left: 1px;
+  	line-height:65px;
+	text-transform:uppercase;
+	color:#8e8071;
+	font-size: 17px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footer_nav__link:first-child {
+  margin-left: 0;
+}
+
+.footer_nav__link:hover{
+	background-color: #f8f3f0;
+	cursor:pointer;
+	height:62px;
+	border-bottom:3px solid #4daf7b;
+}
+
+.footer_nav__link:before{
+	content:'';
+	display:inline-block;
+	height: 30px;
+	position:relative;
+	top:5px;
+	left:-12px;
+	background: url(../images/menu-sprite.png) no-repeat;
+}
+
+.footer_nav__link_check-in:before{
+	background-position: 0 0px;
+	width: 18px;
+}
+
+.footer_nav__link_check-in:after{
+	content:'';
+	display:inline-block;
+	width: 13px;
+	height: 13px;
+	border-radius:50%;
+	color:#fff;
+	font-family: 'Myriad Pro Bold', 'Myriad Pro', Myriad, Arial, sans-serif;
+	font-size: 9px;
+	background-color: #e55e3a;
+	margin:auto auto 10px 2px;
+}
+
+.footer_nav__link_events:before{
+	width: 28px;
+	background-position: -24px 0;
+}
+
+.footer_nav__link_account:before{
+	width: 29px;
+	background-position: -56px 0;
+}
+
+.footer_nav__link_settings:before{
+	width: 27px;
+	background-position: -90px 0;
+}
