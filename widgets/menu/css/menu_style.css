@@ -14,7 +14,7 @@ body{
  	overflow:hidden;
 }
 
-.footer_nav__link{
+.menu_nav__link{
 	display:block;
   	width:157px;
   	height:65px;
@@ -29,18 +29,18 @@ body{
 	text-decoration: none;
 }
 
-.footer_nav__link:first-child {
+.menu_nav__link:first-child {
   margin-left: 0;
 }
 
-.footer_nav__link:hover{
+.menu_nav__link:hover{
 	background-color: #f8f3f0;
 	cursor:pointer;
 	height:62px;
 	border-bottom:3px solid #4daf7b;
 }
 
-.footer_nav__link:before{
+.menu_nav__link:before{
 	content:'';
 	display:inline-block;
 	height: 30px;
@@ -50,35 +50,37 @@ body{
 	background: url(../images/menu-sprite.png) no-repeat;
 }
 
-.footer_nav__link_check-in:before{
+.menu_nav__link_check-in:before{
 	background-position: 0 0px;
 	width: 18px;
 }
 
-.footer_nav__link_check-in:after{
-	content:'';
+.menu_nav__counter{
 	display:inline-block;
-	width: 13px;
-	height: 13px;
+	width:13px;
+	height:13px;
 	border-radius:50%;
 	color:#fff;
 	font-family: 'Myriad Pro Bold', 'Myriad Pro', Myriad, Arial, sans-serif;
 	font-size: 9px;
 	background-color: #e55e3a;
-	margin:auto auto 10px 2px;
+	line-height:13px;
+	position:relative;
+	top:-15px;
+	left:-3px;
 }
 
-.footer_nav__link_events:before{
+.menu_nav__link_events:before{
 	width: 28px;
 	background-position: -24px 0;
 }
 
-.footer_nav__link_account:before{
+.menu_nav__link_account:before{
 	width: 29px;
 	background-position: -56px 0;
 }
 
-.footer_nav__link_settings:before{
+.menu_nav__link_settings:before{
 	width: 27px;
 	background-position: -90px 0;
 }
