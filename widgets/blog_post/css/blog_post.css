@@ -1,0 +1,110 @@
+#blog_post_wrapper {
+    position: relative;
+    height: 394px;
+    width: 371px;
+}
+
+.blog_post_background_top {
+    height: 205px;
+    background-image: url("../img_blog_post/blog_post-background.png");
+    border-radius: 8px 8px 0 0;
+
+}
+.blog_post_table_middle{
+}
+
+.blog_post_table_middle_img {
+    width: 77px;
+    height: 75px;
+    background-image: url("../img_blog_post/blog_post-avatar.png");
+    position: absolute;
+    border-radius: 75px;
+    left: 19px;
+    top: 235px;
+    border-width: 8px;
+    box-shadow: 0 0 0 8px #fff, 0 0 0 9px #d6d1cc;
+
+}
+
+.blog_post_table_middle_title {
+    font-family: "Open Sans SemiBold";
+    font-size: 28px;
+    color: #5c5146;
+    text-align: right;
+    padding-right: 58px;
+    margin-top: 29px;
+    float: right;
+
+}
+
+.blog_post_table_middle_text {
+    font-family: "Open Sans Regular";
+    font-size: 13px;
+    color: #8e8071;
+    text-align: left;
+    padding-top: 14px;
+    line-height: 18px;
+    position: absolute;
+}
+
+.blog_post_menu {
+    list-style-type: none;
+    background-color: #f6f1ed;
+    height: 48px;
+    width: 371px;
+    position: absolute;
+    margin-top: 141px;
+    border-radius: 0 0 8px 8px;
+}
+
+.blog_post_menu li {
+    float: left;
+    width: 122.5px;
+    height: 48px;
+    position: relative;
+    line-height: 48px;
+    border-right: 1px solid #fff;
+}
+
+.blog_post_menu a {
+    padding-left: 42px;
+    display: inline-block;
+    line-height: 48px;
+    text-decoration: none;
+    font-family: "Open Sans Bold";
+    font-size: 16px;
+    color: #b1a599;
+}
+
+a:before {
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    position: relative;
+    top: 8px;
+    left: -12px;
+    background: url(../img_blog_post/blog_post-sprite.png) no-repeat;
+}
+
+.blog_post_menu-172 a:before {
+    background-position: 0px 5px;
+}
+
+.blog_post_menu-34 a:before {
+    background-position: -33px 5px;
+}
+
+.blog_post_menu-210 a:before {
+    background-position: -64px 5px;
+    color: #e26f4d;
+}
+
+.blog_post_menu-210 a {
+    color: #e26f4d;
+}
+
+.blog_post_menu a:hover {
+    background-color: white;
+}
+
