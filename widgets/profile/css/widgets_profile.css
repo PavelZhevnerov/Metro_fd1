@@ -1,0 +1,102 @@
+#widgets_profile_wrapper {
+    position: relative;
+    height: 313px;
+    width: 284px;
+    border: 1px solid white;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.widgets_profile_top_title {
+    height: 123px;
+    width: 284px;
+    background: #b1a599;
+    border-radius: 4px 4px 0 0;
+}
+
+.widgets_profile_top_title_h1 {
+    font-size: 17px;
+    font-family: "Open Sans Bold";
+    color: #ffffff;
+    float: right;
+    padding-top: 22px;
+    padding-right: 69px;
+
+}
+
+.widgets_profile_top_title_text {
+    font-size: 13px;
+    font-family: "Open Sans Regular";
+    color: #7d7266;
+    float: right;
+    clear: right;
+    padding-top: 11px;
+    padding-right: 64px;
+
+}
+
+.widgets_profile_top_title_avatar {
+    height: 77px;
+    width: 75px;
+    background-image: url("../img_profile_widgets/profile-avatar.png");
+    border-radius: 73px;
+    border-width: 7px;
+    box-shadow: 0 0 0 8px #b1a599, 0 0 0 9px #8a7e72;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+}
+
+.widgets_profile_mainMenu {
+    list-style: none;
+}
+
+.widgets_profile_mainMenu a {
+    color: #a5998d;
+    font-family: "Open Sans Regular";
+    padding-left: 19px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid white;
+    width: 263px;
+    height: 41px;
+    display: block;
+    line-height: 41px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+
+}
+
+a:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: 9px;
+    margin-right: 9px;
+    float: right;
+    background: url(../img_profile_widgets/profile-sprite.png) no-repeat;
+
+}
+
+.widgets_profile_mainMenu-Edit a:before {
+    background-position: 0px 0px;
+}
+
+.widgets_profile_mainMenu-Webstatistics a:before {
+    background-position: -22px 0px;
+
+}
+
+.widgets_profile_mainMenu-Upload a:before {
+    background-position: -46px 0px;
+}
+
+.widgets_profile_mainMenu-Events a:before {
+    background-position: -70px 0px;
+}
+
+.widgets_profile_mainMenu a:hover {
+    background-color: #f8f3f0;
+    border-left-width: 3px;
+    border-left-color: #4daf7b;
+}
