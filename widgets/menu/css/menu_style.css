@@ -43,16 +43,16 @@ body{
 .menu_nav__link:before{
 	content:'';
 	display:inline-block;
-	height: 30px;
+	height: 32px;
+	width: 32px;
 	position:relative;
-	top:5px;
-	left:-12px;
-	background: url(../images/menu-sprite.png) no-repeat;
+	background: url(../../../common/css/images/spritesheet.png) no-repeat;
 }
 
 .menu_nav__link_check-in:before{
-	background-position: 0 0px;
-	width: 18px;
+	background-position: -95px 0;
+	top:11px;
+	left:1px;
 }
 
 .menu_nav__counter{
@@ -66,21 +66,24 @@ body{
 	background-color: #e55e3a;
 	line-height:13px;
 	position:relative;
-	top:-15px;
-	left:-3px;
+	top:-14px;
+	left:-2px;
 }
 
 .menu_nav__link_events:before{
-	width: 28px;
-	background-position: -24px 0;
+	background-position: 0 -32px;
+	top:10px;
+	left:-14px;
 }
 
 .menu_nav__link_account:before{
-	width: 29px;
-	background-position: -56px 0;
+	background-position: -32px -32px;
+	top:10px;
+	left:-8px;
 }
 
 .menu_nav__link_settings:before{
-	width: 27px;
-	background-position: -90px 0;
+	background-position: -63px -32px;
+	top:10px;
+	left:-10px;
 }

@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-menu_1 {
+    width: 32px;
+    height: 32px;
+    background-position: -1px -1px;
+}
+
+.sprite-menu_2 {
+    width: 32px;
+    height: 32px;
+    background-position: -35px -1px;
+}
+
+.sprite-menu_3 {
+    width: 31px;
+    height: 32px;
+    background-position: -1px -35px;
+}
+
+.sprite-menu_4 {
+    width: 32px;
+    height: 32px;
+    background-position: -34px -35px;
+}

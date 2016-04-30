@@ -1,0 +1,17 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-navigation_1 {
+    width: 32px;
+    height: 32px;
+    background-position: -1px -1px;
+}
+
+.sprite-navigation_2 {
+    width: 32px;
+    height: 32px;
+    background-position: -35px -1px;
+}
