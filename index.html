@@ -8,42 +8,55 @@
 		<link rel="stylesheet" type="text/css" href="common/css/style_index.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!--[if lt IE 9]>
+    	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 	</head>
 	<body>
-		<div class="metro_page">
+		<div class="metroPage">
 									<!-- Header -->
-			<div class="metro_page__header">
-				<h1 class="metro_page__header_title"></h1>
-				<p class="metro_page__header_text"></p>
-			</div>
+			<header class="metroPage__item metroPage__item_header header">
+				<hgroup>
+					<h1 class="header__title"></h1>
+					<h3 class="header__text"></h3>
+				</hgroup>
+			</header>
 									<!-- Content -->
-			<div class="metro_page__content">
+			<article class="metroPage__item metroPage__item_content content">
 									<!-- Menu widget-->
-				<div class="content__menu"></div>
+				<div class="content__item content__item_header">
+					<div class="content__menu menu"></div>
+					<!-- <nav class="menu menu_nav font__open-sans_bold">
+						<a class="menu_nav__link menu_nav__link_check-in" href="#">check in <span class="menu_nav__counter font__myriadpro_bold">3</span></a>
+						<a class="menu_nav__link menu_nav__link_events" href="#">events</a>
+						<a class="menu_nav__link menu_nav__link_account" href="#">account</a>
+						<a class="menu_nav__link menu_nav__link_settings" href="#">settings</a>
+					</nav> -->
+				</div>
 									<!-- Left Column -->
-				<div class="content__col content__col_left">
+				<div class="content__item content__item_colLeft">
 									<!-- Graphic widget-->
-					<div class="content__graphic"></div>
+					<div class="content__graphic graphic"></div>
 									<!-- Profile widget-->
-					<div class="content__profile"></div>
+					<div class="content__profile profile"></div>
 				</div>
 									<!-- Right Column -->
-				<div class="content__col content__col_right">
+				<div class="content__item content__item_colRight">
 									<!-- Statistics widget-->
-					<div class="content__statistics"></div>
+					<div class="content__statistics statistics"></div>
 									<!-- Navigation widget-->
-					<div class="content__navigation"></div>
+					<div class="content__navigation navigation"></div>
 									<!-- Ribbons widget-->
-					<div class="content__ribbons"></div>
+					<div class="content__ribbons ribbons"></div>
 				</div>
-			</div>
+			</article>
 									<!-- Sidebar -->
-			<div class="metro_page__sidebar">
+			<aside class="metroPage__item metroPage__item_sidebar sidebar">
 									<!-- Blog post widget-->
-				<div class="sidebar__blog_post"></div>
+				<div class="sidebar__blogPost blogPost"></div>
 									<!-- Contact form widget-->
-				<div class="sidebar__contact_form"></div>
-			</div>	
+				<div class="sidebar__contactForm contactForm"></div>
+			</aside>	
 		</div>
 	</body>
 </html>
