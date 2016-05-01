@@ -1,8 +1,12 @@
 @import url(../../../common/css/fonts.css);
+body{
+	background-color: lightgrey;
+}
 #Navigation_wrapper{
 	width: 304px;
 	height: 174px;
-	background-color: transparent;
+	background-color: pink;
+	margin: 30px;
 }
 .NavigationList{
 	font-family: 'Open Sans Bold', sans-serif;
@@ -11,89 +15,102 @@
 ul.NavigationList a{
 	text-decoration: none;
 	color: #8E8071;
-}	
-li.NavigationList_Edit, li.NavigationList_MyProfile{
-	float: left;
 }
-li.NavigationList_Edit{
-	width: 126px;
-}
-li.NavigationList_MyProfile{
-	width: 178px;
-}
-ul.NavigationList_MyProfile_Items li:first-child, ul.NavigationList_Edit_Items li:first-child {
-	display: block;
+ul.NavigationList > li {				
+    float: left;
+    position: relative;	
 	font-size: 15px;
 	background-color: white;
-	cursor: pointer;
-}
-ul.NavigationList_MyProfile_Items li:first-child{
-	border-radius: 6px 0 0 0;
-}
-ul.NavigationList_Edit_Items li:first-child {
-	border-radius: 0 6px 6px 0;
-}
-ul.NavigationList_MyProfile_Items li:last-child{
-	border-radius: 0 0 6px 6px;
+	cursor: pointer;	
 }
 
-ul.NavigationList_MyProfile_Items li:first-child:hover, ul.NavigationList_Edit_Items li:first-child:hover{
-	background-color: #f8f3f0;
-	border-bottom: 4px solid #49a16f;
-	height: 62px;
+ul.NavigationList > li:first-child{				
+	border-radius: 6px 0 0 6px;
 }
-ul.NavigationList_MyProfile_Items li:nth-child(n+2){
+ul.NavigationList > li:last-child{				
+	border-radius: 0 6px 6px 0;
+}
+ul.NavigationList_Profile_Items li:last-child {				
+	border-radius: 0 0 0 6px;
+}
+ul.NavigationList_Edit_Items li:last-child {				
+	border-radius: 0 0 6px 0;
+}
+.NavigationList_Profile_Header{
+	width: 178px;
+	height: 66px;
+	text-align: center;
+}
+.NavigationList_Profile_Header a, .NavigationList_Edit_Header a{
+	display: inline-block;
+	height: 66px;
+	line-height: 66px;
+}
+
+div.NavigationList_Profile_Header a:before{
+	content: "  ";
+	display:inline-block;
+	height: 28px;
+	width: 28px;
+	background-image: url(../../../common/sprite/spritesheet.png);
+	background-position: -5px -74px;
+	position: relative;
+	bottom: -6px;
+	margin-right: 4px;
+}
+
+.NavigationList_Edit_Header{
+	width: 126px;
+	height: 66px;
+	text-align: center;
+}
+div.NavigationList_Edit_Header a:before{
+	content: "  ";
+	display:inline-block;
+	height: 28px;
+	width: 28px;
+	background-image: url(../../../common/sprite/spritesheet.png);
+	background-position: -5px -74px;
+	position: relative;
+	bottom: -6px;
+	margin-right: 4px;
+}
+
+ul.NavigationList_Profile_Items li, ul.NavigationList_Edit_Items li{
 	line-height: 36px;
 	padding-left: 25px;
 	font-size: 13px;
-	background-color: white;
 	cursor: pointer;
 }
-ul.NavigationList_MyProfile_Items li:nth-child(n+2):hover {
+ul.NavigationList_Profile_Items li:hover {
 	background-color: #f8f3f0;
 	border-left: 4px solid #49a16f;
 	width: 153px;
 	padding-left: 21px;
 }
-
-.NavigationList_MyProfile_ItemWrapper{
-	width: 178px;
-	height: 66px;
-	display: table-cell;
-	vertical-align: middle;
+ul.NavigationList_Edit_Items li:hover {
+	background-color: #f8f3f0;
+	border-left: 4px solid #49a16f;
+	width: 101px;
+	padding-left: 21px;
 }
-.NavigationList_MyProfile_ItemFilling{
-	width: 150px;
-	height: 28px;
-	line-height: 28px;
-	margin: 0 auto;
-}
-.NavigationList_MyProfile_ItemPicture{
-	width: 30px;
-	height: 28px;
-	background-image: url(../../../common/sprite/spritesheet.png);
-	float: left;
-	margin-right: 8px;
-	background-position: -5px -74px;
-}
-.NavigationList_Edit_ItemWrapper{
-	width: 126px;
-	height: 66px;
-	display: table-cell;
-	vertical-align: middle;
+ul.NavigationList > li > ul {
+    display: none;			
 }
 
-.NavigationList_Edit_ItemFilling{
-	width: 100px;
-	height: 28px;
-	line-height: 28px;
-	margin: 0 auto;
+ul.NavigationList > li:hover> ul {
+    display: inline-block;	
 }
-.NavigationList_Edit_ItemPicture{
-	width: 30px;
-	height: 28px;
-	background-image: url(../../../common/sprite/spritesheet.png);
-	float: left;
-	margin-right: 8px;
-	background-position: -35px -74px;
+
+ul.NavigationList > li:hover > div.NavigationList_Profile_Header{
+    background-color: #f8f3f0;
+	border-radius: 6px 0 0 0;
+	border-bottom: 4px solid #49a16f;
+	height: 62px;
+}
+ul.NavigationList > li:hover > div.NavigationList_Edit_Header{
+    background-color: #f8f3f0;
+	border-radius: 0 6px 0 0;
+	border-bottom: 4px solid #49a16f;
+	height: 62px;
 }
