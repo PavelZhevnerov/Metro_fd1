@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset=utf-8">
+		<meta charset="utf-8">
 		<link href="css/Navigation.css" type="text/css" rel="stylesheet">
 		<link href="../../common/css/reset.css" type="text/css" rel="stylesheet">
 		<link href="../../common/css/common.css" type="text/css" rel="stylesheet">
@@ -9,36 +9,31 @@
 	</head>
 
 	<body>
-		<div id="Navigation_wrapper">
-			<ul class="NavigationList">
-				<li> 
-					<div class="NavigationList_Profile_Header">
-						<a href="">
-							my profile
-						</a>			
-					</div>
-					
-					<ul class="NavigationList_Profile_Items">
-						<li><a href="">invite friends</a></li>
-						<li><a href="">find friends</a></li>
-						<li><a href="">log out</a></li>
-					</ul>
-				</li>
-					  
-				<li class="NavigationList_Edit">
-					<div class="NavigationList_Edit_Header">
-						<a href="">
-							edit
-						</a>								
-					</div>
-					
-					<ul class="NavigationList_Edit_Items">
-						 <li><a href="">change</a></li>
-						 <li><a href="">save</a></li>
-						 <li><a href="">delete</a></li>
-					</ul>
-				</li>
-			</ul>
+		<div id="navigation__wrapper">
+			<div class="navigation__list font__open-sans_bold">
+				<div class="navigation__list_profile">    
+					<label><input type="radio" checked name="Checkbox">
+						<ul class="navigation__list_profileItems">
+							<li><a href="#">invite friends</a></li>
+							<li><a href="#">find friends</a></li>
+							<li><a href="#">log out</a></li>
+						</ul>
+						<div class="navigation__list_profileHeader"><span>my profile</span></div>
+					</label>
+  
+				</div>
+ 
+				<div class="navigation__list_edit">
+					<label><input type="radio" name="Checkbox">
+						<ul class="navigation__list_editItems">
+							<li><a href="#">change</a></li>
+							<li><a href="#">save</a></li>
+							<li><a href="#">delete</a></li>
+						</ul>
+						<div class="navigation__list_editHeader"><span>edit</span></div>
+					</label>
+				</div>
+			</div>
 		
 		</div>
 	</body>

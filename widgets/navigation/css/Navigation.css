@@ -1,116 +1,153 @@
-@import url(../../../common/css/fonts.css);
-body{
-	background-color: lightgrey;
-}
-#Navigation_wrapper{
-	width: 304px;
+@import url("../../../common/css/reset.css");
+@import url("../../../common/css/common.css");
+@import url("../../../common/css/fonts.css");
+
+#navigation__wrapper{
+	width: 305px;
 	height: 174px;
-	background-color: pink;
-	margin: 30px;
+	background-color: transporent;
+	position: relative;
+	
 }
-.NavigationList{
-	font-family: 'Open Sans Bold', sans-serif;
+.navigation__list{
+	width: 305px;
+	height: 174px;
 	text-transform: uppercase;	
 }
-ul.NavigationList a{
+.navigation__list a{
 	text-decoration: none;
 	color: #8E8071;
-}
-ul.NavigationList > li {				
-    float: left;
-    position: relative;	
-	font-size: 15px;
-	background-color: white;
-	cursor: pointer;	
-}
-
-ul.NavigationList > li:first-child{				
-	border-radius: 6px 0 0 6px;
-}
-ul.NavigationList > li:last-child{				
-	border-radius: 0 6px 6px 0;
-}
-ul.NavigationList_Profile_Items li:last-child {				
-	border-radius: 0 0 0 6px;
-}
-ul.NavigationList_Edit_Items li:last-child {				
-	border-radius: 0 0 6px 0;
-}
-.NavigationList_Profile_Header{
-	width: 178px;
-	height: 66px;
-	text-align: center;
-}
-.NavigationList_Profile_Header a, .NavigationList_Edit_Header a{
-	display: inline-block;
-	height: 66px;
-	line-height: 66px;
-}
-
-div.NavigationList_Profile_Header a:before{
-	content: "  ";
-	display:inline-block;
-	height: 28px;
-	width: 28px;
-	background-image: url(../../../common/sprite/spritesheet.png);
-	background-position: -5px -74px;
-	position: relative;
-	bottom: -6px;
-	margin-right: 4px;
-}
-
-.NavigationList_Edit_Header{
-	width: 126px;
-	height: 66px;
-	text-align: center;
-}
-div.NavigationList_Edit_Header a:before{
-	content: "  ";
-	display:inline-block;
-	height: 28px;
-	width: 28px;
-	background-image: url(../../../common/sprite/spritesheet.png);
-	background-position: -5px -74px;
-	position: relative;
-	bottom: -6px;
-	margin-right: 4px;
-}
-
-ul.NavigationList_Profile_Items li, ul.NavigationList_Edit_Items li{
-	line-height: 36px;
-	padding-left: 25px;
-	font-size: 13px;
 	cursor: pointer;
 }
-ul.NavigationList_Profile_Items li:hover {
+.navigation__list_profile{
+	width: 178px;
+	height: 174px;
+	float: left;
+	position: relative;
+	margin-right: 1px;
+}
+.navigation__list_edit{
+	width: 126px;
+	height: 174px;
+	float: left;
+	position: relative;
+}
+.navigation__list_profileHeader, .navigation__list_editHeader{
+	height: 66px;
+	line-height: 66px;
+	padding-left: 20px;
+	cursor: pointer;
+	background-color: #ffffff;
+	color: #8E8071;
+	font-size: 15px;
+}
+.navigation__list_profileHeader{
+	width: 178px;
+}
+.navigation__list_editHeader{
+	width: 126px;
+}
+ul.navigation__list_profileItems, ul.navigation__list_editItems{
+	list-style: none;
+}
+ul.navigation__list_profileItems li, ul.navigation__list_editItems li{
+	height: 36px;
+	display: none;
+	padding-left: 25px;
+	line-height: 36px;
+	background-color: #ffffff;
+	font-size: 13px;
+}
+ul.navigation__list_profileItems li{
+	width: 153px;
+}
+ul.navigation__list_editItems li{
+	width: 101px;
+}
+
+ul.navigation__list_profileItems li:first-child, ul.navigation__list_editItems li:first-child{
+	position: absolute;
+	top: 66px;
+}
+ul.navigation__list_profileItems li:nth-child(2), ul.navigation__list_editItems li:nth-child(2){
+	position: absolute;
+	top: 102px;
+}
+ul.navigation__list_profileItems li:last-child, ul.navigation__list_editItems li:last-child{
+	position: absolute;
+	top: 138px;
+}
+.navigation__list input {
+	display: none;
+}
+.navigation__list label {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+div.navigation__list_profile input:checked + ul.navigation__list_profileItems li {
+	display: inline-block; 
+}
+div.navigation__list_edit input:checked + ul.navigation__list_editItems li {
+	display: inline-block; 
+}
+ul.navigation__list_profileItems li:hover {
 	background-color: #f8f3f0;
 	border-left: 4px solid #49a16f;
 	width: 153px;
 	padding-left: 21px;
 }
-ul.NavigationList_Edit_Items li:hover {
+ul.navigation__list_editItems li:hover {
 	background-color: #f8f3f0;
 	border-left: 4px solid #49a16f;
 	width: 101px;
 	padding-left: 21px;
 }
-ul.NavigationList > li > ul {
-    display: none;			
-}
-
-ul.NavigationList > li:hover> ul {
-    display: inline-block;	
-}
-
-ul.NavigationList > li:hover > div.NavigationList_Profile_Header{
-    background-color: #f8f3f0;
+.navigation__list_profileHeader {				
 	border-radius: 6px 0 0 0;
+	margin-right: 1px;
+}
+.navigation__list_editHeader {				
+	border-radius: 0 6px 6px 0;
+}
+ul.navigation__list_profileItems li:last-child, ul.navigation__list_editItems li:last-child  {				
+	border-radius: 0 0 6px 6px;
+}
+div.navigation__list_profileHeader span:before{
+	content: "  ";
+	display:inline-block;
+	height: 32px;
+	width: 32px;
+	background-image: url(../../../common/css/images/spritesheet.png);
+	background-position: -96px -32px;
+	position: relative;
+	bottom: -10px;
+	margin-right: 6px;
+}
+div.navigation__list_editHeader span:before{
+	content: "  ";
+	display:inline-block;
+	height: 32px;
+	width: 32px;
+	background-image: url(../../../common/css/images/spritesheet.png);
+	background-position: 0px -64px;
+	position: relative;
+	bottom: -10px;
+	margin-right: 9px;
+}
+div.navigation__list_profileHeader:hover, div.navigation__list_editHeader:hover {
+    background-color: #f8f3f0;
+	border-radius: 0 0 0 0;
 	border-bottom: 4px solid #49a16f;
 	height: 62px;
 }
-ul.NavigationList > li:hover > div.NavigationList_Edit_Header{
-    background-color: #f8f3f0;
+div.navigation__list_profileHeader:hover {
+	border-radius: 6px 0 0 0;
+}
+div.navigation__list_editHeader:hover {
 	border-radius: 0 6px 0 0;
-	border-bottom: 4px solid #49a16f;
-	height: 62px;
+}
+div.navigation__list_edit input:checked + ul.navigation__list_editItems + .navigation__list_editHeader{
+	border-radius: 0 6px 0 0;
 }
