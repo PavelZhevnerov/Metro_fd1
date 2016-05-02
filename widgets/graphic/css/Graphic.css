@@ -1,30 +1,27 @@
 @import url(../../../common/css/fonts.css);
-body{
-	background-color: yellow;
-}
-#Graphic_wrapper{
+#graphic__wrapper{
 	width: 283px;
 	height: 436px;
 	border-radius: 6px;
 }
 
-.Graphic_capitel{
+.graphic__capitel{
 	font-variant: small-caps;
 	display: inline;
 }
-.GraphicTop{
+.graphic__top{
 	width: 283px;
 	height: 151px;
 	background-image: url(../img/graphic-background.png);
 	
 }
-.GraphicTop_arrowWrapper{
+.graphic__top_arrowWrapper{
 	height: 50px;
 	float: left;
 	padding-top: 34px;
 	padding-left: 18px;
 }
-.GraphicTop_arrow{
+.graphic__top_arrow{
 	width: 0;
 	height: 0;
 	border-left: 4px solid transparent;
@@ -32,44 +29,39 @@ body{
 	border-bottom: 5px solid white;
 	float: left;
 }
-.GraphicTop_numbers{
+.graphic__top_numbers{
 	color: white;
-	font-family: 'Open Sans Regular', sans-serif;
 	font-size: 24px;
 	line-height: 20px;
 	padding-top: 20px;
 	padding-left: 30px;
 }
-.GraphicTop_numbersLittle{
+.graphic__top_numbersLittle{
 	font-size: 14px;
 	color: #9ED9B1;
 }
-
-
-
-.GraphicContent{
+.graphic__content{
 	width: 263px;
 	height: 254px;
 	padding-top: 30px;
 	padding-left: 20px;
-	font-family: 'Open Sans Regular', sans-serif;
-	background-color: white;
+	background-color: #ffffff;
 	border-radius: 6px;
 }
-.GraphicContent_Data{
+.graphic__content_data{
 	color: #8e8071;
 	margin-bottom: 20px;
 }
-.GraphicContent_Data_Time{
+.graphic__content_dataTime{
 	font-size: 12px;
 	color: #BAB2A9;
 	display: inline;
 }
-.GraphicContent_Data_City{
+.graphic__content_dataCity{
 	font-size: 19px;
 }
 
-.GraphicContent_DataRectangle{
+.graphic__content_dataRectangle{
 	width: 120px;
 	height: 68px;
 	background-color: #f6f0ec;
@@ -77,7 +69,7 @@ body{
 	float: left;
 	margin-right: 2px;
 }
-.GraphicContent_DataRectangle_textWrapper{
+.graphic__content_dataRectangle-textWrapper{
 	width: 100px;
 	height: 40px;
 	margin: 20px auto 0 auto;
@@ -85,19 +77,14 @@ body{
 	font-size: 18px;
 	text-align: center;
 	color: #897869;
-	font-family: 'Open Sans SemiBold', sans-serif;
 	line-height: 80%;
 }
-
-.GraphicContent_DataRectangle_text {
+.graphic__content_dataRectangle-text {
 	font-size: 12px;
 	text-transform: none;
 	color: #A79583;
 }
-
-
-
-.GraphicContent_Stock_GroupA{
+.graphic__content_stockGroupA{
 	width: 135px;
 	height: 65px;
 	float: left;
@@ -105,15 +92,14 @@ body{
 	margin-top: 25px;
 	
 }
-
-.GraphicContent_Stock_GroupB{
+.graphic__content_stockGroupB{
 	width: 95px;
 	height: 65px;
 	float: left;
 	margin-top: 25px;
 	position: relative;
 }
-.GraphicContent_Stock_Column{
+.graphic__content_stockColumn{
 	width: 9px;
 	height: 40px;
 	float: left;
@@ -122,61 +108,59 @@ body{
 	position: relative;
 }
 
-.GraphicContent_Stock_ColumnRed{
+.graphic__content_stockColumn-red{
 	width: 9px;
 	position: absolute;
 	bottom: 0;
 	background-color: #e55f3b;
 }
-.GraphicContent_Stock_ColumnGreen{
+.graphic__content_stockColumn-green{
 	width: 9px;
 	position: absolute;
 	bottom: 0;
 	background-color: #4daf7b;
 }
-.GraphicContent_Stock_Column1{
+.graphic__content_stockColumn1{
 	height: 16px;
 }
-.GraphicContent_Stock_Column2{
+.graphic__content_stockColumn2{
 	height: 20px;
 }
-.GraphicContent_Stock_Column3{
+.graphic__content_stockColumn3{
 	height: 30px;
 }
-.GraphicContent_Stock_Column4{
+.graphic__content_stockColumn4{
 	height: 35px;
 }
-.GraphicContent_Stock_Column5{
+.graphic__content_stockColumn5{
 	height: 15px;
 }
-.GraphicContent_Stock_Column6{
+.graphic__content_stockColumn6{
 	height: 32px;
 }
-.GraphicContent_Stock_Column7{
+.graphic__content_stockColumn7{
 	height: 20px;
 }
-.GraphicContent_Stock_Column8{
+.graphic__content_stockColumn8{
 	height: 7px;
 }
-.GraphicContent_Stock_Column9{
+.graphic__content_stockColumn9{
 	height: 12px;
 }
 
-.GraphicContent_Stock_Header{
+.graphic__content_stockHeader{
 	font-size: 14px;
-	font-family: 'Open Sans Regular', sans-serif;
 	color: #A8A197;
 	margin-bottom: 8px;
 	padding-top: 3px;
 }
-.GraphicContent_StockRectangle{
+.graphic__content_stockRectangle{
 	width: 95px;
 	height: 42px;
 	background-color: #4daf7b;
 	border-radius: 3px;
 	font-size: 18px;
-	font-family: 'Open Sans Regular', sans-serif;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
