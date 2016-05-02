@@ -42,11 +42,11 @@
 }
 .navigation__list_profileHeader{
 	width: 158px;
-	border-radius: 6px 0 0 0;
+	border-radius: 4px 0 0 0;
 }
 .navigation__list_editHeader{
 	width: 106px;
-	border-radius: 0 6px 6px 0;
+	border-radius: 0 4px 4px 0;
 }
 ul.navigation__list_profileItems, ul.navigation__list_editItems{
 	list-style: none;
@@ -106,7 +106,7 @@ ul.navigation__list_editItems li:hover {
 	padding-left: 21px;
 }
 ul.navigation__list_profileItems li:last-child, ul.navigation__list_editItems li:last-child  {				
-	border-radius: 0 0 6px 6px;
+	border-radius: 0 0 4px 4px;
 }
 div.navigation__list_profileHeader span:before{
 	content: "  ";
@@ -137,11 +137,11 @@ div.navigation__list_profileHeader:hover, div.navigation__list_editHeader:hover 
 	height: 61px;
 }
 div.navigation__list_profileHeader:hover {
-	border-radius: 6px 0 0 0;
+	border-radius: 4px 0 0 0;
 }
 div.navigation__list_editHeader:hover {
-	border-radius: 0 6px 0 0;
+	border-radius: 0 4px 0 0;
 }
 div.navigation__list_edit input:checked + ul.navigation__list_editItems + .navigation__list_editHeader{
-	border-radius: 0 6px 0 0;
+	border-radius: 0 4px 0 0;
 }
