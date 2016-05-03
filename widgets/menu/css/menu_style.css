@@ -6,7 +6,7 @@ body{
 	background-color:#333;
 }
 
-.menu_nav{
+.menu{
   	height: 65px;
   	width: 631px;
   	background-color: #f6f0ec;
@@ -14,7 +14,19 @@ body{
  	overflow:hidden;
 }
 
-.menu_nav__link{
+.menu__leftPart{
+	height: 65px;
+	width: 315px;
+	float:left;
+}
+
+.menu__RightPart{
+	height: 65px;
+	width: 315px;
+	float:right;
+}
+
+.menu__link{
 	display:block;
   	width:157px;
   	height:65px;
@@ -29,18 +41,18 @@ body{
 	text-decoration: none;
 }
 
-.menu_nav__link:first-child {
+.menu__link:nth-child(odd){
   margin-left: 0;
 }
 
-.menu_nav__link:hover{
+.menu__link:hover{
 	background-color: #f8f3f0;
 	cursor:pointer;
 	height:62px;
 	border-bottom:3px solid #4daf7b;
 }
 
-.menu_nav__link:before{
+.menu__link:before{
 	content:'';
 	display:inline-block;
 	height: 32px;
@@ -49,13 +61,13 @@ body{
 	background: url(../../../common/css/images/spritesheet.png) no-repeat;
 }
 
-.menu_nav__link_check-in:before{
+.menu__link_check-in:before{
 	background-position: -95px 0;
 	top:11px;
 	left:1px;
 }
 
-.menu_nav__counter{
+.menu__counter{
 	display:inline-block;
 	width:13px;
 	height:13px;
@@ -69,20 +81,36 @@ body{
 	left:-2px;
 }
 
-.menu_nav__link_events:before{
+.menu__link_events:before{
 	background-position: 0 -32px;
 	top:10px;
 	left:-14px;
 }
 
-.menu_nav__link_account:before{
+.menu__link_account:before{
 	background-position: -32px -32px;
 	top:10px;
 	left:-8px;
 }
 
-.menu_nav__link_settings:before{
+.menu__link_settings:before{
 	background-position: -63px -32px;
 	top:10px;
 	left:-10px;
 }
+
+/*@media screen and (max-width: 650px) {
+.menu{
+  	height: 131px;
+   	width: 315px;
+}
+
+.menu__leftPart{
+	float:none;
+   	margin-bottom: 1px;
+}
+
+.menu__RightPart{
+	float:none;
+}
+} */
