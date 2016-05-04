@@ -52,19 +52,19 @@
             "dataProvider": [
                 {
                     "category": "Audio",
-                    "column-1": "55"
+                    "column-1": "33"
                 },
                 {
                     "category": "Video",
-                    "column-1": "23"
+                    "column-1": "33"
                 },
                 {
                     "category": "Photo",
-                    "column-1": "17"
+                    "column-1": "33"
                 },
                 {
                     "category": "Other",
-                    "column-1": "5"
+                    "column-1": "1"
                 }
             ]
         }
