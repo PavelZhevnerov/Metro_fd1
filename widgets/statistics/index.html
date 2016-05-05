@@ -12,64 +12,57 @@
     <script src="https://www.amcharts.com/lib/3/pie.js"></script>
     <script src="https://www.amcharts.com/lib/3/plugins/animate/animate.min.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="scripts/jquery-2.2.3.min.js"></script>
+    <script src="scripts/underscore-min.js"></script>
     <script src="scripts/widgetStatistics.js"></script>
 </head>
 <body>
 <div class="container font__open-sans_regular">
     <div class="widgetStatistics font__myriadpro_bold">
-        <div class="widgetStatistics-tabs-item-b"></div>
-        <div class="widgetStatistics-tabs">
-            <div class="widgetStatistics-tabs-item active">
+        <div class="widgetStatistics__helper"></div>
+        <div class="widgetTabs">
+            <div class="widgetTabs__item js-diagram_stats widgetTabs__item_active">
                 Diagram stats
             </div>
-            <div class="widgetStatistics-tabs-item-separator">
+            <div class="widgetTabs__itemSeparator">
             </div>
-            <div class="widgetStatistics-tabs-item">
+            <div class="widgetTabs__item js-month_report">
                 Month report
             </div>
         </div>
-        <div class="widgetStatistics-chart">
-            <div class="widgetStatistics-chart-caption">Data transfer</div>
-            <div id="chartdiv"></div>
+        <div class="widgetChart">
+            <div class="widgetChart__caption">Data transfer</div>
+            <div id="chartdiv" class="widgetChart__chart"></div>
         </div>
-        <div class="widgetStatistics-largestSize font__open-sans_bold">
-            <div class="widgetStatistics-largestSize-item">
-                <div class="widgetStatistics-largestSize-item-led"></div>
-                <div class="widgetStatistics-largestSize-item-title">
-                    audio
+        <div class="widgetLargestSize font__open-sans_bold">
+            <div class="widgetLargestSize__item">
+                <div class="widgetLargestSize__itemLed"></div>
+                <div class="widgetLargestSize__itemTitle">
                 </div>
-                55%
+                <div class="widgetLargestSize__itemValue">
+                </div>
             </div>
-            <div class="widgetStatistics-largestSize-item">
-                <div class="widgetStatistics-largestSize-item-led"></div>
-                <div class="widgetStatistics-largestSize-item-title">
-                    video
+            <div class="widgetLargestSize__item">
+                <div class="widgetLargestSize__itemLed widgetLargestSize__itemLed_red"></div>
+                <div class="widgetLargestSize__itemTitle">
                 </div>
-                23%
+                <div class="widgetLargestSize__itemValue">
+                </div>
             </div>
-            <div class="widgetStatistics-largestSize-item">
-                <div class="widgetStatistics-largestSize-item-led"></div>
-                <div class="widgetStatistics-largestSize-item-title">
-                    photo
+            <div class="widgetLargestSize__item">
+                <div class="widgetLargestSize__itemLed widgetLargestSize__itemLed_yellow"></div>
+                <div class="widgetLargestSize__itemTitle">
                 </div>
-                17%
+                <div class="widgetLargestSize__itemValue">
+                </div>
             </div>
         </div>
-        <div class="widgetStatistics-actions font__open-sans_bold">
-            <div class="widgetStatistics-actions-item longText">
-                <div>
-                    <i class="icon upload"></i>
-                </div>
+        <div class="widgetActions font__open-sans_bold">
+            <div class="widgetActions__item widgetActions__item_icon_upload widgetActions__item_longText">
                 Upload files</div>
-            <div class="widgetStatistics-actions-item">
-                <div>
-                    <i class="icon share"></i>
-                </div>
+            <div class="widgetActions__item widgetActions__item_icon_share">
                 Share link</div>
-            <div class="widgetStatistics-actions-item">
-                <div>
-                    <i class="icon backup"></i>
-                </div>
+            <div class="widgetActions__item widgetActions__item_icon_backup">
                 Back up</div>
         </div>
     </div>
