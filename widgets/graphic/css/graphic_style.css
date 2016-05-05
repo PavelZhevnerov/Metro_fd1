@@ -2,7 +2,7 @@
 #graphic__wrapper{
 	width: 283px;
 	height: 436px;
-	border-radius: 6px;
+	border-radius: 4px;
 }
 .graphic__capitel{
 	font-variant: small-caps;
@@ -11,7 +11,7 @@
 .graphic__top{
 	width: 283px;
 	height: 151px;
-	background-image: url(../images/graphic-background.png);
+	background-image: url(../../../common/css/images/graphic_background.png);
 }
 .graphic__top_arrowWrapper{
 	height: 50px;
@@ -44,7 +44,7 @@
 	padding-top: 30px;
 	padding-left: 20px;
 	background-color: #ffffff;
-	border-radius: 6px;
+	border-radius: 4px;
 }
 .graphic__content_data{
 	color: #8e8071;
