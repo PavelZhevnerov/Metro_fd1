@@ -7,10 +7,8 @@
     width: 370px;
     border-radius: 4px;
     background-color: #fff;
-    overflow: hidden;
-
+    /* overflow: hidden; */
     border:1px solid #333;
-    /* position: relative; */
     margin:20px;
 }
 
@@ -29,23 +27,19 @@
 .content__avatar{
     width: 73px;
     height: 73px;
-    background-image: url("../images/blog_post-avatar.png");
-    /* position: absolute; */
+    background-image: url("../../../common/css/images/blogPost_avatar.png");
     border-radius: 50%;
-    /* left: 29px;
-    top: 237px; */
     border-width: 7px;
     box-shadow: 0 0 0 8px #fff, 0 0 0 9px #d6d1cc;
     float:left;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 32px;
+    margin-left: 28px;
 }
 
 .content__text{
     float: right;
     padding-top: 28px;
-    width: 249px;
-    /* margin-right: -5px; */
+    width: 244px;
 }
 
 .content__text_name{
@@ -63,79 +57,64 @@
     line-height: 18px;
 }
 
-.blogPost__menu {
+.blogPost__footer {
     background-color: #fff;
     height: 48px;
     width: 370px;
 }
 
-.blogPost__menu_feedback{
+.blogPost__footer_feedback{
     width: 370px;
     height:48px;
 }
 
-.menu__link{
+.footer__link{
     display: block;
     height: 48px;
     width: 123px;
     background-color: #f6f1ed;
     color: #8e8071;
     line-height: 48px;
-    font-size: 16.29px;
+    font-size: 16px;
     float:left;
     text-align: center;
-   /*  text-decoration: none; */
     margin-right: 1px;
 }
 
-.menu__link:nth-child(2){
+.footer__link:nth-child(2){
     width: 122px;
 }
 
-.menu__link:last-child{
+.footer__link:last-child{
      margin-right: 0;
-     color:#e86741;
 }
 
-.menu__link:hover{
+.footer__link:hover{
     cursor:pointer;
+    height:45px;
+    border-bottom:3px solid #4daf7b;
+    color:#e86741;
 }
 
-.menu__link:before{
+.footer__link:before{
     content:'';
     display:inline-block;
     height: 32px;
     width: 32px;
     position:relative;
     background: url('../../../common/css/images/spritesheet.png') no-repeat;
-}
-
-.menu__link_review:before{
-    background-position: 0 0px;
-    top:10px;
+    top:8px;
     left:-5px;
 }
 
-.menu__link_comment:before{
+.footer__link_review:before{
+    background-position: 0 0px;
+}
+
+.footer__link_comment:before{
     background-position: -31px 0;
-     top:10px;
-     left:-5px;
 }
 
-.menu__link_like:before{
+.footer__link_like:before{
     background-position: -63px 0;
-     top:10px;
-     left:-5px;
-}
-
-.img{
-    background: url('../../../images/blog_post.png');
-    width: 370px;
-    height: 392px;
-    opacity:0.5;
-    border:1px solid #333;
-    margin: 20px;
-    border-radius:4px;
-    position: relative;
-    top:-412px;
 }

@@ -1,0 +1,104 @@
+@import url("../../../common/css/reset.css");
+@import url("../../../common/css/common.css");
+@import url("../../../common/css/fonts.css");
+
+.profile {
+    height: 312px;
+    width: 283px;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.profile__head {
+    height: 124px;
+    background: #b1a599;
+    padding-top: 25px;
+    padding-left: 30px;
+    box-sizing:border-box;
+}
+
+.head__text{
+    float: right;
+    margin-top: 6px;
+    padding-right: 63px;
+}
+
+.head__text_name{
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.head__text_followers{
+    font-size: 13px;
+    color: #3a2f24;
+    padding-top: 10px;
+}
+
+.head__avatar{
+    height: 73px;
+    width: 73px;
+    background: #fff url("../../../common/css/images/profile_avatar.png") no-repeat center center;
+    border-radius: 50%;
+    border-width: 7px;
+    box-shadow: 0 0 0 8px #b1a599, 0 0 0 9px #8a7e72;
+}
+
+.profile__content {
+    height: 188px;
+    background-color: #fff;
+    box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.content__link{
+    display: block;
+    height: 49px;
+    width: 262px;
+    color: #8e8071;
+    line-height: 49px;
+    padding-left: 21px;
+    font-size: 15px;
+    text-decoration: none;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.content__link:hover {
+    width:280px;
+    padding-left: 18px;
+    background-color: #f8f3f0;
+    border-left: 3px solid #4daf7b;
+    width: 262px;
+    height: 41px;
+    line-height: 41px;
+}
+
+.content__link:after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('../../../common/css/images/spritesheet.png') no-repeat;
+    float: right;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.content__link_edit:after {
+    background-position: -32px -64px;
+}
+
+.content__link_statistics:after {
+    background-position: -64px -64px;
+}
+
+.content__link_upload:after {
+    background-position: -96px -64px;
+}
+
+.content__link_events:after {
+    background-position: 0px -96px;
+}

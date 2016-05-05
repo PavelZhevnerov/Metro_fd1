@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-profile_1 {
+    width: 32px;
+    height: 32px;
+    background-position: -1px -1px;
+}
+
+.sprite-profile_2 {
+    width: 32px;
+    height: 32px;
+    background-position: -35px -1px;
+}
+
+.sprite-profile_3 {
+    width: 32px;
+    height: 32px;
+    background-position: -1px -35px;
+}
+
+.sprite-profile_4 {
+    width: 32px;
+    height: 32px;
+    background-position: -35px -35px;
+}
