@@ -42,6 +42,7 @@
     border: 1px solid #fdfdfd;
     border-bottom: none;
     border-radius: 5px 5px 0 0;
+    cursor: pointer;
 }
 
 .widgetTabs__item_active {
@@ -130,12 +131,24 @@
     border-radius: 0 0 5px 5px;
 }
 
+.widgetActions:hover {
+}
+
 .widgetActions__item {
     width: 33%;
+    cursor: pointer;
 }
 
 .widgetActions__item:hover {
     background-color: #63574b;
+}
+
+.widgetActions__item:first-child:hover {
+    border-radius: 0 0 0 5px;
+}
+
+.widgetActions__item:last-child:hover {
+    border-radius: 0 0 5px 0;
 }
 
 .widgetActions__item:before {
