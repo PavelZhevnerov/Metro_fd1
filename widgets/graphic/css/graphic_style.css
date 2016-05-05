@@ -1,4 +1,7 @@
-@import url(../../../common/css/fonts.css);
+@import url('../../../common/css/fonts.css');
+@import url('../../../common/css/reset.css');
+@import url('../../../common/css/common.css');
+
 #graphic__wrapper{
 	width: 283px;
 	height: 436px;
@@ -11,7 +14,7 @@
 .graphic__top{
 	width: 283px;
 	height: 151px;
-	background-image: url(../../../common/css/images/graphic_background.png);
+	background-image: url('../images/graphic_background.png');
 }
 .graphic__top_arrowWrapper{
 	height: 50px;
@@ -33,6 +36,7 @@
 	line-height: 20px;
 	padding-top: 20px;
 	padding-left: 30px;
+	text-align: left;
 }
 .graphic__top_numbersLittle{
 	font-size: 14px;
@@ -44,11 +48,12 @@
 	padding-top: 30px;
 	padding-left: 20px;
 	background-color: #ffffff;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 .graphic__content_data{
 	color: #8e8071;
 	margin-bottom: 20px;
+	text-align: left;
 }
 .graphic__content_dataTime{
 	font-size: 12px;
@@ -88,6 +93,7 @@
 	float: left;
 	margin-right: 12px;
 	margin-top: 25px;
+	text-align: left;
 	
 }
 .graphic__content_stockGroupB{
