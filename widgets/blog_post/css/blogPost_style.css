@@ -1,0 +1,141 @@
+@import url("../../../common/css/reset.css");
+@import url("../../../common/css/common.css");
+@import url("../../../common/css/fonts.css");
+
+.blogPost{
+    height: 392px;
+    width: 370px;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+
+    border:1px solid #333;
+    /* position: relative; */
+    margin:20px;
+}
+
+.blogPost__top {
+    width: 370px;
+    height: 204px;
+    background: url("../../../common/css/images/blogPost_background.png") no-repeat center top;
+}
+
+.blogPost__content {
+    height: 140px;
+    width: 370px;
+    background-color: #fff;
+}
+
+.content__avatar{
+    width: 73px;
+    height: 73px;
+    background-image: url("../images/blog_post-avatar.png");
+    /* position: absolute; */
+    border-radius: 50%;
+    /* left: 29px;
+    top: 237px; */
+    border-width: 7px;
+    box-shadow: 0 0 0 8px #fff, 0 0 0 9px #d6d1cc;
+    float:left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.content__text{
+    float: right;
+    padding-top: 28px;
+    width: 249px;
+    /* margin-right: -5px; */
+}
+
+.content__text_name{
+    font-size: 28px;
+    color: #5c5146;
+    text-align: left;
+    line-height: 28px;
+}
+
+.content__text_description{
+    font-size: 13px;
+    color: #8e8071;
+    text-align: left;
+    padding-top: 11px;
+    line-height: 18px;
+}
+
+.blogPost__menu {
+    background-color: #fff;
+    height: 48px;
+    width: 370px;
+}
+
+.blogPost__menu_feedback{
+    width: 370px;
+    height:48px;
+}
+
+.menu__link{
+    display: block;
+    height: 48px;
+    width: 123px;
+    background-color: #f6f1ed;
+    color: #8e8071;
+    line-height: 48px;
+    font-size: 16.29px;
+    float:left;
+    text-align: center;
+   /*  text-decoration: none; */
+    margin-right: 1px;
+}
+
+.menu__link:nth-child(2){
+    width: 122px;
+}
+
+.menu__link:last-child{
+     margin-right: 0;
+     color:#e86741;
+}
+
+.menu__link:hover{
+    cursor:pointer;
+}
+
+.menu__link:before{
+    content:'';
+    display:inline-block;
+    height: 32px;
+    width: 32px;
+    position:relative;
+    background: url('../../../common/css/images/spritesheet.png') no-repeat;
+}
+
+.menu__link_review:before{
+    background-position: 0 0px;
+    top:10px;
+    left:-5px;
+}
+
+.menu__link_comment:before{
+    background-position: -31px 0;
+     top:10px;
+     left:-5px;
+}
+
+.menu__link_like:before{
+    background-position: -63px 0;
+     top:10px;
+     left:-5px;
+}
+
+.img{
+    background: url('../../../images/blog_post.png');
+    width: 370px;
+    height: 392px;
+    opacity:0.5;
+    border:1px solid #333;
+    margin: 20px;
+    border-radius:4px;
+    position: relative;
+    top:-412px;
+}
