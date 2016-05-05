@@ -4,63 +4,7 @@ textarea {
     outline: none
 }
 
-input[type="text"],
-textarea {
-    width: 100%;
-}
-
-input[type="text"],
-textarea {
-    padding: 14px 14px 15px;
-    width: calc(100% - 14px * 2 - 1px * 2);
-    border: 1px solid #e5d4c2;
-    border-radius: 4px;
-}
-
-textarea {
-    resize: none;
-}
-
-.contactForm {
-    background-color: #fdfdfd;
-    border-radius: 5px;
-    letter-spacing: -.7px;
-}
-
-.contactsInput {
-    padding: 5px;
-    width: calc(100% - 5px * 2 - 1px * 2);
-    border: 1px solid #e5d4c2;
-    border-radius: 4px;
-}
-
-.contactsInput .contact {
-    display: table;
-    float: left;
-    height: 36px;
-    border-radius: 3px;
-    color: #f0f6f1;
-    background-color: #5d8fae;
-    margin-right: 5px;
-    font-size: 14px;
-    letter-spacing: -.4px;
-}
-
-.contactsInput .contact + .contact {
-    background-color: #4cae7a;
-}
-
-.contactsInput .contact .contact-content {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 14px;
-}
-
-.contactForm label {
-    color: #96887a;
-}
-
-.contactForm button {
+.button {
     text-transform: capitalize;
     padding: 9px 23px;
     border: 1px solid;
@@ -68,64 +12,17 @@ textarea {
     position: relative;
     line-height: 22px;
     font-size: 17px;
+    cursor: pointer;
 }
 
-.contactForm button.web20 {
-    box-shadow: 0 1px 1px #aaaaaa;
-}
-
-
-.contactForm button.web20:after {
-    content: '';
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-shadow: 1px 1px 2px rgba(255, 255, 255, .4);
-}
-
-.contactForm-body .label-wrapper {
-    margin: 21px 0 9px 1px;
-}
-
-.contactForm-footer .label-wrapper {
-    display: inline-block;
-    margin: 12px 0 10px 0;
-}
-
-.contactForm .contactForm-body {
-    padding-top: 9px;
-    padding-bottom: 19px;
-}
-
-.contactForm .contactForm-footer {
-    padding-top: 21px;
-    padding-bottom: 21px;
-}
-
-.contactForm .contactForm-body {
-    padding-left: 31px;
-    padding-right: 30px;
-}
-
-.contactForm .contactForm-footer {
-    padding-left: 32px;
-    padding-right: 32px;
-}
-
-.contactForm .contactForm-footer {
-    background-color: #f6f1ee;
-    border-radius: 5px;
-}
-
-.contactForm button.sendMail {
+.button_sendMail {
     color: #fcf6f4;
     background-color: #e35f3b;
     border-color: #c65739;
 }
 
-.contactForm button i.sendMail {
+.button_sendMail:before {
+    content: '';
     display: inline-block;
     background-image: url('images/send_icon.png');
     width: 22px;
@@ -135,53 +32,87 @@ textarea {
     margin-left: -14px;
 }
 
-.contactForm button.addContact {
-    background-color: #ebe1db;
-    border: none;
-    padding: 8px;
-    width: 36px;
-    height: 36px;
+.button_web20 {
+    box-shadow: 0 1px 1px #aaaaaa;
 }
 
-.contactForm button.addContact:before,
-.contactForm button.addContact:after {
+.button_web20:after {
     content: '';
-    background-color: #ebe1db;
-    border: 2px solid #fdfdfd;
-    display: block;
-    border-radius: 2px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
     position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, .4);
 }
 
-.contactForm button.addContact:before {
-    width: 16px;
-    top: 16px;
+.contactForm {
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    letter-spacing: -.7px;
 }
 
-.contactForm button.addContact:after {
-    width: 0;
-    height: 16px;
-    left: 16px;
-    top: 8px;
+.contactForm__body {
+    padding: 9px 30px 19px 31px;
 }
 
-.floatRight {
+.contactForm__footer {
+    padding: 21px 32px;
+    background-color: #f6f1ee;
+    border-radius: 5px;
+}
+
+.contactForm__rightContainer {
     float: right;
 }
 
-.cf:after {
-    content: '';
-    display: block;
-    clear: both;
+.input {
+
 }
 
-input[type="checkbox"] {
-    display:none;
+.input__text,
+.input__textarea {
+    padding: 14px 14px 15px;
+    width: calc(100% - 14px * 2 - 1px * 2);
+    border: 1px solid #e5d4c2;
+    border-radius: 4px;
 }
-input[type="checkbox"] + label {
+
+.input__textarea {
+    resize: none;
+}
+
+.label {
+    margin: 21px 0 9px 1px;
+}
+
+.label__content,
+.inputWithLabel__label {
+    color: #96887a;
+}
+
+.inputWithLabel {
+
+}
+
+.inputWithLabel__label {
+
+}
+
+.inputWithLabel_inline {
+    display: inline-block;
+    margin: 12px 0 10px 0;
+}
+
+.inputWithLabel__checkbox {
+    display: none;
+}
+
+.inputWithLabel__checkbox + .inputWithLabel__label {
     cursor: pointer;
 }
-input[type="checkbox"] + label::before {
+
+.inputWithLabel__checkbox + .inputWithLabel__label::before {
     content: '';
     display: inline-block;
     height: 22px;
@@ -190,15 +121,75 @@ input[type="checkbox"] + label::before {
     background-repeat: no-repeat;
     vertical-align: middle;
 }
-input[type="checkbox"] + label::before {
+
+.inputWithLabel__checkbox + .inputWithLabel__label::before {
     background-image: url('images/checkbox.png');
 }
-input[type="checkbox"]:checked + label::before {
+
+.inputWithLabel__checkbox:checked + .inputWithLabel__label::before {
     background-image: url('images/checkbox_checked.png');
 }
-input[type="checkbox"]:disabled + label::before {
-    background-position: -152px -260px;
+
+.input__valueCollection {
+    padding: 5px;
+    width: calc(100% - 5px * 2 - 1px * 2);
+    border: 1px solid #e5d4c2;
+    border-radius: 4px;
 }
-input[type="checkbox"]:checked:disabled + label::before {
-    background-position: -171px -260px;
+
+.input__valueCollectionItem {
+    padding: 11px 14px;
+    display: inline-block;
+    border-radius: 3px;
+    color: #f0f6f1;
+    background-color: #5d8fae;
+    margin-right: 5px;
+    font-size: 14px;
+    letter-spacing: -.4px;
+    cursor: pointer;
+}
+
+.input__valueCollectionItem_green {
+    background-color: #4cae7a;
+}
+
+.input__rightContainer {
+    float: right;
+}
+
+.input__addButton {
+    background-color: #ebe1db;
+    border: none;
+    padding: 8px;
+    width: 36px;
+    height: 36px;
+    position: relative;
+}
+
+.input__addButton:before,
+.input__addButton:after {
+    content: '';
+    background-color: #ebe1db;
+    border: 2px solid #fdfdfd;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.input__addButton:before {
+    width: 16px;
+    top: 16px;
+}
+
+.input__addButton:after {
+    width: 0;
+    height: 16px;
+    left: 16px;
+    top: 8px;
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
 }

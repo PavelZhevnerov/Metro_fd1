@@ -12,41 +12,46 @@
 <body>
 <div class="container font__open-sans_regular">
     <div class="contactForm">
-        <div class="contactForm-body">
-            <div class="label-wrapper">
-                <label>Contacts</label>
+        <div class="contactForm__body">
+            <div class="label">
+                <label class="label__content">Contacts</label>
             </div>
-            <div>
-                <div class="contactsInput cf">
-                    <div class="contact"><div class="contact-content">Hello@me.com</div></div>
-                    <div class="contact"><div class="contact-content">Andy@me.com</div></div>
-                    <div class="floatRight">
-                        <button class="addContact"></button>
+            <div class="input">
+                <div class="input__valueCollection contactsInput cf">
+                    <div class="input__valueCollectionItem">
+                        Hello@me.com
+                    </div><div class="input__valueCollectionItem input__valueCollectionItem_green">
+                        Andy@me.com
+                    </div>
+                    <div class="input__rightContainer">
+                        <button class="button input__addButton"></button>
                     </div>
                 </div>
             </div>
-            <div class="label-wrapper">
-                <label for="subject">Subject</label>
+            <div class="label">
+                <label class="label__content" for="subject">Subject</label>
             </div>
-            <div>
-                <input type="text" name="subject" id="subject" placeholder="You can add a subject">
+            <div class="input">
+                <input class="input__text" type="text" name="subject" id="subject" placeholder="You can add a subject">
             </div>
-            <div class="label-wrapper">
-                <label for="message">Message</label>
+            <div class="label">
+                <label class="label__content" for="message">Message</label>
             </div>
-            <div>
-                <textarea name="message" id="message" placeholder="Leave your message here" rows="4"></textarea>
+            <div class="input">
+                <textarea class="input__textarea" name="message" id="message" placeholder="Leave your message here" rows="4"></textarea>
             </div>
         </div>
-        <div class="contactForm-footer cf">
-            <div class="label-wrapper">
-                <input type="checkbox" name="saveCopy" id="saveCopy">
-                <label for="saveCopy">
+        <div class="contactForm__footer cf">
+            <div class="inputWithLabel inputWithLabel_inline">
+                <input class="inputWithLabel__checkbox" type="checkbox" name="saveCopy" id="saveCopy">
+                <label class="inputWithLabel__label" for="saveCopy">
                     Save a copy
                 </label>
             </div>
-            <div class="floatRight">
-                <button class="sendMail web20"><i class="sendMail"></i>Send mail</button>
+            <div class="contactForm__rightContainer">
+                <button class="button button_web20 button_sendMail">
+                    Send mail
+                </button>
             </div>
         </div>
     </div>
