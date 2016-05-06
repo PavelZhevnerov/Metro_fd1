@@ -14,48 +14,52 @@
 <body>
 <div class="container font__open-sans_regular">
     <div class="contactForm">
-        <div class="contactForm__body">
-            <div class="label">
-                <label class="label__content">Contacts</label>
-            </div>
-            <div class="input">
-                <div class="input__valueCollection contactsInput cf">
-                    <div class="input__rightContainer">
-                        <button class="button input__addButton"></button>
+        <form method="post" action="file:///E:/GitHub/Project---Metro/widgets/contact_form/index.html">
+            <div class="contactForm__body">
+                <div class="label">
+                    <label class="label__content">Contacts</label>
+                </div>
+                <div class="input">
+                    <div class="input__valueCollection cf">
+                        <div class="input__rightContainer">
+                            <button class="button input__addButton" id="addButton"></button>
+                        </div>
+                        <div class="input__valueCollectionItem">
+                            Hello@me123.com
+                        </div>
+                        <div class="input__valueCollectionItem input__valueCollectionItem_green">
+                            Andy@me.com
+                        </div>
                     </div>
-                    <div class="input__valueCollectionItem">
-                        Hello@me123.com
-                    </div><div class="input__valueCollectionItem input__valueCollectionItem_green">
-                        Andy@me.com
-                    </div>
+                    <input type="hidden" name="emails">
+                </div>
+                <div class="label">
+                    <label class="label__content" for="subject">Subject</label>
+                </div>
+                <div class="input">
+                    <input class="input__text" type="text" name="subject" id="subject"
+                           placeholder="You can add a subject">
+                </div>
+                <div class="label">
+                    <label class="label__content" for="message">Message</label>
+                </div>
+                <div class="input">
+                    <textarea class="input__textarea" name="message" id="message" placeholder="Leave your message here"
+                              rows="4"></textarea>
                 </div>
             </div>
-            <div class="label">
-                <label class="label__content" for="subject">Subject</label>
+            <div class="contactForm__footer cf">
+                <div class="inputWithLabel inputWithLabel_inline">
+                    <input class="inputWithLabel__checkbox" type="checkbox" name="saveCopy" id="saveCopy">
+                    <label class="inputWithLabel__label" for="saveCopy">
+                        Save a copy
+                    </label>
+                </div>
+                <div class="contactForm__rightContainer">
+                    <input type="submit" value="Send mail" class="button button_web20 button_sendMail">
+                </div>
             </div>
-            <div class="input">
-                <input class="input__text" type="text" name="subject" id="subject" placeholder="You can add a subject">
-            </div>
-            <div class="label">
-                <label class="label__content" for="message">Message</label>
-            </div>
-            <div class="input">
-                <textarea class="input__textarea" name="message" id="message" placeholder="Leave your message here" rows="4"></textarea>
-            </div>
-        </div>
-        <div class="contactForm__footer cf">
-            <div class="inputWithLabel inputWithLabel_inline">
-                <input class="inputWithLabel__checkbox" type="checkbox" name="saveCopy" id="saveCopy">
-                <label class="inputWithLabel__label" for="saveCopy">
-                    Save a copy
-                </label>
-            </div>
-            <div class="contactForm__rightContainer">
-                <button class="button button_web20 button_sendMail">
-                    Send mail
-                </button>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
 </body>
