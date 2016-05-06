@@ -131,7 +131,7 @@ textarea {
 }
 
 .input__valueCollection {
-    padding: 5px;
+    padding: 5px 5px 1px;
     width: calc(100% - 5px * 2 - 1px * 2);
     border: 1px solid #e5d4c2;
     border-radius: 4px;
@@ -147,6 +147,7 @@ textarea {
     font-size: 14px;
     letter-spacing: -.4px;
     cursor: pointer;
+    margin-bottom: 4px;
 }
 
 .input__valueCollectionItem_green {
