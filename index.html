@@ -5,9 +5,16 @@
 		<meta name="description" content="Site about ...">
 		<meta name="keywords" content="graphic, statistics, navigation, ribbons">
 		<title>Metro-Project</title>
-		<link rel="stylesheet" type="text/css" href="common/css/style_index.css">
+		<link rel="stylesheet" type="text/css" href="common/css/index_style.css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    	<script src="https://www.amcharts.com/lib/3/pie.js"></script>
+    	<script src="https://www.amcharts.com/lib/3/plugins/animate/animate.min.js"></script>
+    	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    	<script src="common/scripts/jquery-2.2.3.min.js"></script>
+    	<script src="common/scripts/underscore-min.js"></script>
+    	<script src="common/scripts/statistics.js"></script>
 		<!--[if lt IE 9]>
     	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -143,7 +150,56 @@
 									<!-- Right Column -->
 				<div class="content__item content__item_colRight">
 									<!-- Statistics widget-->
-					<div class="content__statistics statistics"></div>
+					<div class="content__statistics statistics font__open-sans_regular">
+						<div class="widgetStatistics font__myriadpro_bold">
+        					<div class="widgetStatistics__helper"></div>
+        					<div class="widgetTabs">
+        					    <div class="widgetTabs__item js-diagram_stats widgetTabs__item_active">
+        					        Diagram stats
+        					    </div>
+        					    <div class="widgetTabs__itemSeparator">
+        					    </div>
+        					    <div class="widgetTabs__item js-month_report">
+        					        Month report
+        					    </div>
+        					</div>
+        					<div class="widgetChart">
+        					    <div class="widgetChart__caption">Data transfer</div>
+        					    <div id="chartdiv" class="widgetChart__chart"></div>
+        					</div>
+        					<div class="widgetLargestSize font__open-sans_bold">
+        					    <div class="widgetLargestSize__item">
+        					        <div class="widgetLargestSize__itemLed"></div>
+        					        <div class="widgetLargestSize__itemTitle">
+        					        </div>
+        					        <div class="widgetLargestSize__itemValue">
+        					        </div>
+        					    </div>
+        					    <div class="widgetLargestSize__item">
+        					        <div class="widgetLargestSize__itemLed widgetLargestSize__itemLed_red"></div>
+        					        <div class="widgetLargestSize__itemTitle">
+        					        </div>
+        					        <div class="widgetLargestSize__itemValue">
+        					        </div>
+        					    </div>
+        					    <div class="widgetLargestSize__item">
+        					        <div class="widgetLargestSize__itemLed widgetLargestSize__itemLed_yellow"></div>
+        					        <div class="widgetLargestSize__itemTitle">
+        					        </div>
+        					        <div class="widgetLargestSize__itemValue">
+        					        </div>
+        					    </div>
+        					</div>
+        					<div class="widgetActions font__open-sans_bold">
+        					    <div class="widgetActions__item widgetActions__item_icon_upload widgetActions__item_longText">
+        					        Upload files</div>
+        					    <div class="widgetActions__item widgetActions__item_icon_share">
+        					        Share link</div>
+        					    <div class="widgetActions__item widgetActions__item_icon_backup">
+        					        Back up</div>
+        					</div>
+    					</div>
+					</div>
 									<!-- Navigation widget-->
 					<div class="content__navigation navigation">
 						<div class="navigation__list font__open-sans_bold">
@@ -170,7 +226,17 @@
 						</div>
 					</div>
 									<!-- Ribbons widget-->
-					<div class="content__ribbons ribbons"></div>
+					<div class="content__ribbons ribbons">
+						<div class="ribbons__flag font__open-sans_bold">
+							<a class="ribbons__ref" href="http://ru.aliexpress.com/">
+								<div class="ribbons__hotspot"></div>
+								<div class="ribbons__flag_content">
+									<div class="ribbons__flag_contentText">sale</div>	
+									<div class="ribbons__flag_contentPercent">20%</div>
+								</div>	
+							</a>	
+						</div>
+					</div>
 				</div>
 			</article>
 									<!-- Sidebar -->
