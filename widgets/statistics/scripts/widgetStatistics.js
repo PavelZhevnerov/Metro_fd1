@@ -60,14 +60,22 @@
             $('.widgetTabs__item').removeClass('widgetTabs__item_active');
             self.addClass('widgetTabs__item_active');
 
-            var temp;
             if (self.hasClass('js-diagram_stats')){
+                $('.widgetChart')
+                    .removeClass('widgetChart_rightActive')
+                    .addClass('widgetChart_leftActive');
                 makeChart(diagramStatsData, labelsStatsData);
             } else if (self.hasClass('js-month_report')){
+                $('.widgetChart')
+                    .removeClass('widgetChart_leftActive')
+                    .addClass('widgetChart_rightActive');
                 makeChart(monthReportData, labelsReportData);}
             quickHack();
         });
 
+        $('.widgetChart')
+            .removeClass('widgetChart_rightActive')
+            .addClass('widgetChart_leftActive');
         makeChart(diagramStatsData, labelsStatsData);
     });
 

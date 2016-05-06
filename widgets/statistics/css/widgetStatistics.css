@@ -58,7 +58,14 @@
     height: 314px;
     padding-top: 38px;
     background-color: #fdfdfd;
+}
+
+.widgetChart_leftActive {
     border-radius: 0 5px 0 0;
+}
+
+.widgetChart_rightActive {
+    border-radius: 5px 0 0 0;
 }
 
 .widgetChart__caption {
