@@ -1,12 +1,16 @@
 @import url("../../../common/css/reset.css");
 @import url("../../../common/css/common.css");
 @import url("../../../common/css/fonts.css");
-
+body{
+	background-color: lightgrey;
+}
 #navigation__wrapper{
 	width: 305px;
 	height: 172px;
 	background-color: transporent;
 	position: relative;
+	margin: 200px;
+	box-shadow:3px 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 .navigation__list{
 	width: 305px;

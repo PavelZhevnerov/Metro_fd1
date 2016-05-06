@@ -480,11 +480,10 @@ body{
 .content__navigation{
 	height: 172px;
 	width: 304px;
-	/* background-color: #fff; */
+	/*background-color: #fff; */
 	border-radius:4px;
-	/* box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.3); */
-	background-color: transporent;
-	position: relative;
+	/*box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.3);*/
+	background-color: transparent;
 }
 
 .navigation__list{
@@ -502,13 +501,14 @@ body{
 	height: 172px;
 	float: left;
 	position: relative;
-	/* margin-right: 1px; */
+	/**margin-right: 1px; */
 }
 .navigation__list_edit{
 	width: 127px;
 	height: 172px;
 	float: left;
 	position: relative;
+	background-color: transparent;
 }
 .navigation__list_profileHeader, .navigation__list_editHeader{
 	height: 65px;
@@ -522,10 +522,12 @@ body{
 .navigation__list_profileHeader{
 	width: 158px;
 	border-radius: 4px 0 0 0;
+	box-shadow:-2px 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 .navigation__list_editHeader{
 	width: 106px;
 	border-radius: 0 4px 4px 0;
+	box-shadow:2px 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 ul.navigation__list_profileItems, ul.navigation__list_editItems{
 	list-style: none;
@@ -537,6 +539,10 @@ ul.navigation__list_profileItems li, ul.navigation__list_editItems li{
 	line-height: 36px;
 	background-color: #ffffff;
 	font-size: 13px;
+	position: absolute;
+	left: 0;
+	text-align: left;	
+	box-shadow:0 2px 10px 0 rgba(0, 0, 0, 0.3);
 }
 ul.navigation__list_profileItems li{
 	width: 152px;
