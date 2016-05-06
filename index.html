@@ -12,7 +12,8 @@
     	<script src="https://www.amcharts.com/lib/3/pie.js"></script>
     	<script src="https://www.amcharts.com/lib/3/plugins/animate/animate.min.js"></script>
     	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-    	<script src="common/scripts/jquery-2.2.3.min.js"></script>
+    	<script src="common/scripts/navigation.js"></script>
+		<script src="common/scripts/jquery-2.2.3.min.js"></script>
     	<script src="common/scripts/underscore-min.js"></script>
     	<script src="common/scripts/statistics.js"></script>
 		<!--[if lt IE 9]>
@@ -204,7 +205,7 @@
 					<div class="content__navigation navigation">
 						<div class="navigation__list font__open-sans_bold">
 							<div class="navigation__list_profile">    
-								<label><input type="radio" checked name="Checkbox">
+								<label><input type="radio" onclick="ribbonsRight()" checked name="Checkbox">
 									<ul class="navigation__list_profileItems">
 										<li><a href="#">invite friends</a></li>
 										<li><a href="#">find friends</a></li>
@@ -214,7 +215,7 @@
 								</label>
 							</div>
 							<div class="navigation__list_edit">
-								<label><input type="radio" name="Checkbox">
+								<label><input type="radio" onclick="ribbonsLeft()" name="Checkbox">
 									<ul class="navigation__list_editItems">
 										<li><a href="#">change</a></li>
 										<li><a href="#">save</a></li>
@@ -226,7 +227,7 @@
 						</div>
 					</div>
 									<!-- Ribbons widget-->
-					<div class="content__ribbons ribbons">
+					<div class="content__ribbons ribbons" id="content__ribbons">
 						<div class="ribbons__flag font__open-sans_bold">
 							<a class="ribbons__ref" href="http://ru.aliexpress.com/">
 								<div class="ribbons__hotspot"></div>

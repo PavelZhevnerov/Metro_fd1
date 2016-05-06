@@ -4,20 +4,14 @@
 		<meta charset="utf-8">
 		<link href="css/navigation_style.css" type="text/css" rel="stylesheet">
 		<title>Navigation</title>
-		<script>
-			function countRabbits() {
-			for(var i=1; i<=3; i++) {
-			alert("Кролик номер " + i);
-				}
-			}
-		</script>
+		<script src="scripts/navigation.js"></script>
 	</head>
 
 	<body>
 		<div id="navigation__wrapper">
 			<div class="navigation__list font__open-sans_bold">
 				<div class="navigation__list_profile">    
-					<label><input type="radio" onclick="countRabbits()" checked name="Checkbox">
+					<label><input type="radio" onclick="ribbonsRight()" checked name="Checkbox">
 						<ul class="navigation__list_profileItems">
 							<li><a href="#">invite friends</a></li>
 							<li><a href="#">find friends</a></li>
@@ -29,7 +23,7 @@
 				</div>
  
 				<div class="navigation__list_edit">
-					<label><input type="radio" name="Checkbox">
+					<label><input type="radio" onclick="ribbonsLeft()" name="Checkbox">
 						<ul class="navigation__list_editItems">
 							<li><a href="#">change</a></li>
 							<li><a href="#">save</a></li>
