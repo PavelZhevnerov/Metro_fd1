@@ -49,6 +49,7 @@ body{
 	margin-left: 16px;
 	margin-top: 9px;
 	position: absolute;
+	text-align: left;
 }
 .ribbons__flag_contentText{
 	font-size: 12px;
