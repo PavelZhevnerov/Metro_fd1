@@ -966,7 +966,7 @@ div.navigation__list_edit input:checked + ul.navigation__list_editItems + .navig
 							/* --Sidebar-- */
 
 .metroPage__item_sidebar{
-	height: auto;
+	height: 892px;
 	width: 370px;
 	float:right;
 	margin-left: 20px;
@@ -1106,7 +1106,7 @@ div.navigation__list_edit input:checked + ul.navigation__list_editItems + .navig
 					/* -- Contact form -- */
 
 .sidebar__contactForm{
-	height: auto;
+	height: 460px;
 	background-color: #fff;
 	border-radius:4px;
 	box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.3);
