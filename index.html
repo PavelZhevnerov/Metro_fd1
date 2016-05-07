@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="Site about ...">
+		<meta name="description" content="Site about Metro Viber">
 		<meta name="keywords" content="graphic, statistics, navigation, ribbons">
 		<title>Metro-Project</title>
 		<link rel="stylesheet" type="text/css" href="common/css/index_style.css">
@@ -12,30 +12,37 @@
     	<script src="https://www.amcharts.com/lib/3/pie.js"></script>
     	<script src="https://www.amcharts.com/lib/3/plugins/animate/animate.min.js"></script>
     	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-    	<script src="common/scripts/navigation.js"></script>
-		<script src="common/scripts/jquery-2.2.3.min.js"></script>
-    	<script src="common/scripts/underscore-min.js"></script>
-    	<script src="common/scripts/statistics.js"></script>
+		<script src="common/scripts/jquery-2.2.3.min.js" type="text/javascript"></script>
+    	<script src="common/scripts/underscore-min.js" type="text/javascript"></script>
+    	<script src="common/scripts/statistics.js" type="text/javascript"></script>
+    	<script src="common/scripts/navigation.js" type="text/javascript"></script>
+    	<script src="common/scripts/сontactForm.js" type="text/javascript"></script>
 		<!--[if lt IE 9]>
     	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<!--[if lt IE 9]>
     	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 		<![endif]-->
-		<link rel="stylesheet" type="text/css" href="common/css/mediaQueries_index.css">
+		<link rel="stylesheet" type="text/css" href="common/css/index_mediaQueries.css">
 	</head>
 	<body>
-		<div class="metroPage">
+		<div id="metroPage">
+
 									<!-- Header -->
+
 			<header class="metroPage__item metroPage__item_header header font__open-sans_regular">
 				<hgroup class="header__group">
 					<h1 class="header__group_title">metro viber | free sample</h1>
 					<h3 class="header__group_text">get the full 100 elements on www.pixelkit.com</h3>
 				</hgroup>
 			</header>
+
 									<!-- Content -->
+
 			<article class="metroPage__item metroPage__item_content content">
+
 									<!-- Menu widget-->
+
 				<div class="content__item content__item_menu font__open-sans_bold">
 					<div class="menu font__open-sans_bold">
 						<nav class="menu__leftPart">
@@ -49,8 +56,11 @@
 					</div>
 				</div>
 									<!-- Left Column -->
+
 				<div class="content__item content__item_colLeft">
+
 									<!-- Graphic widget-->
+
 					<div class="content__graphic graphic">
 						<div class="graphic__top">
 							<div class="graphic__top_arrowWrapper">
@@ -125,7 +135,9 @@
 							</div>		
 						</div>
 					</div>
+
 									<!-- Profile widget-->
+
 					<div class="content__profile profile">
 						<div class="profile__head">
        						<div class="head__text">
@@ -148,9 +160,13 @@
     					</div>
 					</div>
 				</div>
+
 									<!-- Right Column -->
+
 				<div class="content__item content__item_colRight">
+
 									<!-- Statistics widget-->
+
 					<div class="content__statistics statistics font__open-sans_regular">
 						<div class="widgetStatistics font__myriadpro_bold">
         					<div class="widgetStatistics__helper"></div>
@@ -201,7 +217,9 @@
         					</div>
     					</div>
 					</div>
+
 									<!-- Navigation widget-->
+
 					<div class="content__navigation navigation">
 						<div class="navigation__list font__open-sans_bold">
 							<div class="navigation__list_profile">    
@@ -226,7 +244,9 @@
 							</div>
 						</div>
 					</div>
+
 									<!-- Ribbons widget-->
+
 					<div class="content__ribbons ribbons" id="content__ribbons">
 						<div class="ribbons__flag font__open-sans_bold">
 							<a class="ribbons__ref" href="http://ru.aliexpress.com/">
@@ -240,9 +260,13 @@
 					</div>
 				</div>
 			</article>
+
 									<!-- Sidebar -->
+
 			<aside class="metroPage__item metroPage__item_sidebar sidebar">
+
 									<!-- Blog post widget-->
+
 				<div class="sidebar__blogPost blogPost">
 					<div class="blogPost__top"></div>
 	   				<div class="blogPost__content">
@@ -263,8 +287,51 @@
 						</nav>
 					</div>
 				</div>
+
 									<!-- Contact form widget-->
-				<div class="sidebar__contactForm contactForm"></div>
+
+				<div class="sidebar__contactForm contactForm font__open-sans_regular">
+    				<form method="post" action="#">
+    				    <div class="contactForm__body">
+    				        <div class="label">
+    				            <label class="label__content">Contacts</label>
+    				        </div>
+    				        <div class="input">
+    				            <div class="input__valueCollection cf">
+    				                <div class="input__rightContainer">
+    				                    <button class="button input__addButton" id="addButton"></button>
+    				                </div>
+    				            </div>
+    				            <input type="hidden" name="emails">
+    				        </div>
+    				        <div class="label">
+    				            <label class="label__content" for="subject">Subject</label>
+    				        </div>
+    				        <div class="input">
+    				            <input class="input__text" type="text" name="subject" id="subject"
+    				                   placeholder="You can add a subject">
+    				        </div>
+    				        <div class="label">
+    				            <label class="label__content" for="message">Message</label>
+    				        </div>
+    				        <div class="input">
+    				            <textarea class="input__textarea" name="message" id="message" placeholder="Leave yourmessahere"
+    				                      rows="4"></textarea>
+    				        </div>
+    				    </div>
+    				    <div class="contactForm__footer cf">
+    				        <div class="inputWithLabel inputWithLabel_inline">
+    				            <input class="inputWithLabel__checkbox" type="checkbox" name="saveCopy" id="saveCopy">
+    				            <label class="inputWithLabel__label" for="saveCopy">
+    				                Save a copy
+    				            </label>
+    				        </div>
+    				        <div class="contactForm__rightContainer">
+    				            <input type="submit" value="Send mail" class="button button_web20 button_sendMail">
+    				        </div>
+    				    </div>
+    				</form>
+    			</div>
 			</aside>	
 		</div>
 	</body>
