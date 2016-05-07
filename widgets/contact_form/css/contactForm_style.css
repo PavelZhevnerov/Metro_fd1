@@ -4,6 +4,16 @@ textarea {
     outline: none
 }
 
+body {
+    background-color: #977559;
+}
+
+.container {
+    width: 370px;
+    margin-left: 268px;
+    margin-top: 19px;
+}
+
 .button {
     text-transform: capitalize;
     padding: 9px 23px;
@@ -24,7 +34,7 @@ textarea {
 .button_sendMail:before {
     content: '';
     display: inline-block;
-    background-image: url('images/contactForm_send.png');
+    background-image: url('images/send_icon.png');
     width: 22px;
     height: 22px;
     vertical-align: middle;
@@ -123,11 +133,11 @@ textarea {
 }
 
 .inputWithLabel__checkbox + .inputWithLabel__label::before {
-    background-image: url('images/contactForm_checkbox.png');
+    background-image: url('images/checkbox.png');
 }
 
 .inputWithLabel__checkbox:checked + .inputWithLabel__label::before {
-    background-image: url('images/contactForm_checkbox_checked.png');
+    background-image: url('images/checkbox_checked.png');
 }
 
 .input__valueCollection {
