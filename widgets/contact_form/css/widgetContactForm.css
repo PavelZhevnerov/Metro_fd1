@@ -166,6 +166,7 @@ textarea {
     width: 36px;
     height: 36px;
     position: relative;
+    margin-bottom: 4px;
 }
 
 .input__addButton:before,
